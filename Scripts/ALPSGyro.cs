@@ -61,7 +61,8 @@ public class ALPSGyro : MonoBehaviour {
             gyro = Input.gyro;
             gyro.enabled = true;
 
-            rotFix = new Quaternion(0, 0, 0.7071f, 0.7071f);
+            // rotFix = new Quaternion(0, 0, 0.7071f, 0.7071f); -- changed by shwars to fix rotation issue
+	    rotFix = new Quaternion(0, 0, 2*0.7071f, 0.0f);
         }
         else
         {
