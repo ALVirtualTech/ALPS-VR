@@ -85,7 +85,7 @@ public class ALPSController : MonoBehaviour {
 			screenWidthPix = ALPSAndroid.WidthPixels ();
 			screenHeightPix = ALPSAndroid.HeightPixels ();
 		#elif UNITY_WP_8_1
-        	head.AddComponent("ALPSGyro");
+        	        head.AddComponent(typeof(ALPSGyro));
 			Screen.orientation = ScreenOrientation.LandscapeLeft;
             ALPSWP8.Init();
         	screenWidthPix = ALPSWP8.WidthPixels ();
